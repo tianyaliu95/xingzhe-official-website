@@ -65,7 +65,7 @@ function MobileNavBar () {
     : '-translate-y-full'
 
   return (
-    <div className='flex flex-col lg:hidden sticky top-0 z-30 scrolling-touch'>
+    <div className='flex flex-col lg:hidden sticky top-14 z-30 scrolling-touch'>
       <div className='flex flex-row items-center h-12 bg-grays-100 border-b border-grays-200 z-50'>
         <img
           src={hamburgerIcon}

@@ -7,12 +7,15 @@ import Footer from '@/components/Footer'
 export default function Page ({ children, screenBackground }) {
   return (
     <>
+      <DeprecatedBanner />
       <div className={screenBackground}>
         <PageHead />
-        <Header shouldHaveBgColor={!screenBackground} />
-        <main>
-          {children}
-        </main>
+        <div className='pt-14 lg:pt-14'>
+          <Header shouldHaveBgColor={!screenBackground} />
+          <main>
+            {children}
+          </main>
+        </div>
       </div>
       <ScrollToTop />
       <Footer />
@@ -33,5 +36,15 @@ function PageHead () {
       <meta name='description' content={description} />
       <meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests' />
     </Head>
+  )
+}
+
+function DeprecatedBanner () {
+  return (
+    <div className='fixed top-0 inset-x-0 z-100 bg-error text-grays-700'>
+      <div className='mx-auto max-w-5xl px-4 py-4 text-center text-sm sm:text-lg md:text-xl leading-relaxed'>
+        营地已经转型，不再提供服务。此网站已停止运营。朋友们江湖再见。
+      </div>
+    </div>
   )
 }
