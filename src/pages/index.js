@@ -124,7 +124,7 @@ function Contact () {
 
       <div className='w-full lg:w-1/2 flex flex-col justify-center text-center'>
         <Text className='mt-4 lg:mt-0 p-2' text={contactUsContent[contactUsContent.length - 1]?.content} />
-        <div className='w-full h-auto flex justify-center my-4'><img className='flex' src='/assets/QRCode.png' /></div>
+        {/* <div className='w-full h-auto flex justify-center my-4'><img className='flex' src='/assets/QRCode.png' /></div> */}
       </div>
     </div>
   )

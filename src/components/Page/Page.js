@@ -42,8 +42,8 @@ function PageHead () {
 function DeprecatedBanner () {
   return (
     <div className='fixed top-0 inset-x-0 z-100 bg-error text-grays-700'>
-      <div className='mx-auto max-w-5xl px-4 py-4 text-center text-sm sm:text-lg md:text-xl leading-relaxed'>
-        营地已经转型，不再提供服务。此网站已停止运营。朋友们江湖再见。
+      <div className='mx-auto max-w-5xl px-4 py-4 text-center text-sm sm:text-lg md:text-xl leading-relaxed font-bold'>
+        营地已经转型，不再提供服务。朋友们江湖再见。
       </div>
     </div>
   )

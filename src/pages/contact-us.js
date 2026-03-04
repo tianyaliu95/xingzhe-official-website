@@ -30,7 +30,7 @@ export default function ContactUs ({ content }) {
           <div className='w-full lg:w-1/2'>
             <span className='flex justify-start p-2 text-xl lg:text-2xl font-bold'>{contactUsContent[contactUsContent.length - 1]?.label}</span>
             <Text className='mt-4 p-2' text={contactUsContent[contactUsContent.length - 1]?.content} />
-            <div className='w-full h-auto flex ml-4 my-6'><img className='flex justify-start' src='/assets/QRCode.png' /></div>
+            {/* <div className='w-full h-auto flex ml-4 my-6'><img className='flex justify-start' src='/assets/QRCode.png' /></div> */}
           </div>
 
           {/* 高德地图 */}
